@@ -35,7 +35,7 @@
 #include "MyLibrary.h"
 
 int main() {
-  PrintName("Gall Anonim");
+  PrintName("Andrzej Swietek");
   const char* path = PROJECTPATH;
   PrintInfo(PROJECTPATH);
   return 0;
