@@ -36,7 +36,7 @@ void push_front(slist * list, char c)
 void delete_after(slistEl * p)
 {
   if (p == nullptr || p->next == nullptr) {
-    return; // Cannot delete if there's nothing to delete or if p is the last element.
+    return; 
   }
   
   slistEl * toDelete = p->next;
@@ -46,13 +46,14 @@ void delete_after(slistEl * p)
 
 void printl(slist * list)
 {
+  cout << "Moja lista: <";
   slistEl * p = list->head;
   while (p != NULL)
   {
-    cout << p->data << " ";
+    cout << p->data;
     p = p->next;
   }
-  cout << endl;
+  cout << ">" << endl;
 }
 
 
