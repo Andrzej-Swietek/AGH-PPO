@@ -1,3 +1,0 @@
-/home/stud2022/2swietek/Desktop/AGH-PPO/lab01/build/CMakeFiles/Intro.dir
-/home/stud2022/2swietek/Desktop/AGH-PPO/lab01/build/CMakeFiles/edit_cache.dir
-/home/stud2022/2swietek/Desktop/AGH-PPO/lab01/build/CMakeFiles/rebuild_cache.dir
