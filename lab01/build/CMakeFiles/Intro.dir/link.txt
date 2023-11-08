@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/Intro.dir/Main.cpp.o CMakeFiles/Intro.dir/src/MyLibrary.cpp.o -o Intro 
