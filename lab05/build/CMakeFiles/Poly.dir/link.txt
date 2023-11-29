@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/Poly.dir/main.cpp.o CMakeFiles/Poly.dir/src/Album.cpp.o CMakeFiles/Poly.dir/src/Song.cpp.o -o Poly 
