@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -rdynamic CMakeFiles/Array.dir/main.cpp.o CMakeFiles/Array.dir/src/Queue_1.cpp.o CMakeFiles/Array.dir/src/Queue_2.cpp.o CMakeFiles/Array.dir/src/Queue_3.cpp.o CMakeFiles/Array.dir/src/Queue_4.cpp.o -o Array 
