@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/Array.dir/main.cpp.o CMakeFiles/Array.dir/src/Warehouse_1.cpp.o CMakeFiles/Array.dir/src/Warehouse_2.cpp.o CMakeFiles/Array.dir/src/Warehouse_3.cpp.o CMakeFiles/Array.dir/src/Warehouse_4.cpp.o -o Array 
