@@ -1,30 +1,47 @@
-#ifndef PRODUCT_H
-#define PRODUCT_H
+#ifndef P
+#define P
 
-#include <iostream>
-#include <string>
+// #include <vector>
+// #include "Warehouse.h"
 
-class Product {
-private:
-    int type;
-    int quantity;
+// using namespace std;
 
-public:
-    Product(int t, int q);
-    explicit Product(int t);
-    ~Product();
 
-    void SetCard(int q);
-    int Compare(const Product& other) const;
-    explicit operator int() const;
-    operator std::string() const; // anty-pattern
+// class Warehouse;
 
-    void Print() const;
-    std::string ToString() const;
+// class Product
+// {
+//     friend class Warehouse;
 
-};
+// public:
+//     /** @brief Konstruktor domyslny
+//     @return nic nie zwraca
+//     */
+//     Product();
 
-int Compare(Product product, Product product1);
+//     /** @brief Konstruktor z parametrami
+//     @param[in] t typ
+//     @param[in] q ilosc
+//     @return nic nie zwraca
+//     */
+//     Product(int t, int q);
 
-#endif // PRODUCT_H
+//     /** @brief funkcja printujaca
+//     funkcja wyswietla w terminalu wlasciwosci obiektu
+//     @return nic nie zwraca
+//     */
+//     void Print();
 
+//     /** @brief funkcja zmieniajaca pole obiektu
+//     Funkcja zmienia ilosc obiektu
+//     @param[in] q ilosc
+//     @return  nic nie zwraca
+//     */
+//     void SetCard(int q);
+
+// private:
+//     int _type, _quan;
+
+// };
+
+#endif
