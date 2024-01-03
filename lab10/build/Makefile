@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/stud2022/2knapczykma/Desktop/PPO/lab09
+CMAKE_SOURCE_DIR = /home/stud2022/2swietek/Desktop/AGH-PPO/lab10
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/stud2022/2knapczykma/Desktop/PPO/lab09/build
+CMAKE_BINARY_DIR = /home/stud2022/2swietek/Desktop/AGH-PPO/lab10/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud2022/2knapczykma/Desktop/PPO/lab09/build/CMakeFiles /home/stud2022/2knapczykma/Desktop/PPO/lab09/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud2022/2swietek/Desktop/AGH-PPO/lab10/build/CMakeFiles /home/stud2022/2swietek/Desktop/AGH-PPO/lab10/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud2022/2knapczykma/Desktop/PPO/lab09/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/stud2022/2swietek/Desktop/AGH-PPO/lab10/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Conv
+# Target rules for targets named R035
 
 # Build rule for target.
-Conv: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Conv
-.PHONY : Conv
+R035: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 R035
+.PHONY : R035
 
 # fast build rule for target.
-Conv/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/build
-.PHONY : Conv/fast
+R035/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/build
+.PHONY : R035/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,56 +150,104 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/Product.o: src/Product.cpp.o
-.PHONY : src/Product.o
+src/AndroidSoldier.o: src/AndroidSoldier.cpp.o
+.PHONY : src/AndroidSoldier.o
 
 # target to build an object file
-src/Product.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/src/Product.cpp.o
-.PHONY : src/Product.cpp.o
+src/AndroidSoldier.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/AndroidSoldier.cpp.o
+.PHONY : src/AndroidSoldier.cpp.o
 
-src/Product.i: src/Product.cpp.i
-.PHONY : src/Product.i
+src/AndroidSoldier.i: src/AndroidSoldier.cpp.i
+.PHONY : src/AndroidSoldier.i
 
 # target to preprocess a source file
-src/Product.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/src/Product.cpp.i
-.PHONY : src/Product.cpp.i
+src/AndroidSoldier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/AndroidSoldier.cpp.i
+.PHONY : src/AndroidSoldier.cpp.i
 
-src/Product.s: src/Product.cpp.s
-.PHONY : src/Product.s
+src/AndroidSoldier.s: src/AndroidSoldier.cpp.s
+.PHONY : src/AndroidSoldier.s
 
 # target to generate assembly for a file
-src/Product.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/src/Product.cpp.s
-.PHONY : src/Product.cpp.s
+src/AndroidSoldier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/AndroidSoldier.cpp.s
+.PHONY : src/AndroidSoldier.cpp.s
 
-src/Warehouse.o: src/Warehouse.cpp.o
-.PHONY : src/Warehouse.o
+src/ArmyA.o: src/ArmyA.cpp.o
+.PHONY : src/ArmyA.o
 
 # target to build an object file
-src/Warehouse.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/src/Warehouse.cpp.o
-.PHONY : src/Warehouse.cpp.o
+src/ArmyA.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyA.cpp.o
+.PHONY : src/ArmyA.cpp.o
 
-src/Warehouse.i: src/Warehouse.cpp.i
-.PHONY : src/Warehouse.i
+src/ArmyA.i: src/ArmyA.cpp.i
+.PHONY : src/ArmyA.i
 
 # target to preprocess a source file
-src/Warehouse.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/src/Warehouse.cpp.i
-.PHONY : src/Warehouse.cpp.i
+src/ArmyA.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyA.cpp.i
+.PHONY : src/ArmyA.cpp.i
 
-src/Warehouse.s: src/Warehouse.cpp.s
-.PHONY : src/Warehouse.s
+src/ArmyA.s: src/ArmyA.cpp.s
+.PHONY : src/ArmyA.s
 
 # target to generate assembly for a file
-src/Warehouse.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Conv.dir/build.make CMakeFiles/Conv.dir/src/Warehouse.cpp.s
-.PHONY : src/Warehouse.cpp.s
+src/ArmyA.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyA.cpp.s
+.PHONY : src/ArmyA.cpp.s
+
+src/ArmyB.o: src/ArmyB.cpp.o
+.PHONY : src/ArmyB.o
+
+# target to build an object file
+src/ArmyB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyB.cpp.o
+.PHONY : src/ArmyB.cpp.o
+
+src/ArmyB.i: src/ArmyB.cpp.i
+.PHONY : src/ArmyB.i
+
+# target to preprocess a source file
+src/ArmyB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyB.cpp.i
+.PHONY : src/ArmyB.cpp.i
+
+src/ArmyB.s: src/ArmyB.cpp.s
+.PHONY : src/ArmyB.s
+
+# target to generate assembly for a file
+src/ArmyB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyB.cpp.s
+.PHONY : src/ArmyB.cpp.s
+
+src/ArmyC.o: src/ArmyC.cpp.o
+.PHONY : src/ArmyC.o
+
+# target to build an object file
+src/ArmyC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyC.cpp.o
+.PHONY : src/ArmyC.cpp.o
+
+src/ArmyC.i: src/ArmyC.cpp.i
+.PHONY : src/ArmyC.i
+
+# target to preprocess a source file
+src/ArmyC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyC.cpp.i
+.PHONY : src/ArmyC.cpp.i
+
+src/ArmyC.s: src/ArmyC.cpp.s
+.PHONY : src/ArmyC.s
+
+# target to generate assembly for a file
+src/ArmyC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/R035.dir/build.make CMakeFiles/R035.dir/src/ArmyC.cpp.s
+.PHONY : src/ArmyC.cpp.s
 
 # Help Target
 help:
@@ -209,16 +257,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Conv"
+	@echo "... R035"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/Product.o"
-	@echo "... src/Product.i"
-	@echo "... src/Product.s"
-	@echo "... src/Warehouse.o"
-	@echo "... src/Warehouse.i"
-	@echo "... src/Warehouse.s"
+	@echo "... src/AndroidSoldier.o"
+	@echo "... src/AndroidSoldier.i"
+	@echo "... src/AndroidSoldier.s"
+	@echo "... src/ArmyA.o"
+	@echo "... src/ArmyA.i"
+	@echo "... src/ArmyA.s"
+	@echo "... src/ArmyB.o"
+	@echo "... src/ArmyB.i"
+	@echo "... src/ArmyB.s"
+	@echo "... src/ArmyC.o"
+	@echo "... src/ArmyC.i"
+	@echo "... src/ArmyC.s"
 .PHONY : help
 
 

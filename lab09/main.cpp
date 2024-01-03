@@ -39,27 +39,27 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "Product.h"
-#include "Warehouse.h"
+#include "AndroidSoldier.h"
+#include "Army.h"
 
 using namespace std;
 
 
 int main(int argc, char** argv) 
 {
-	Product e1(1, 5);
+	AndroidSoldier e1(1, 5);
 	e1.Print();
-	Product e2(2, 3);
-	Product e3(3, 17);
-	Product e4(4, 9);
-	Product e5(5, 1);
-	Product e6(6, 7);
-	Product e7(7, 4);
-	Product e8(8, 2);
+	AndroidSoldier e2(2, 3);
+	AndroidSoldier e3(3, 17);
+	AndroidSoldier e4(4, 9);
+	AndroidSoldier e5(5, 1);
+	AndroidSoldier e6(6, 7);
+	AndroidSoldier e7(7, 4);
+	AndroidSoldier e8(8, 2);
 	
-	//Product e9(9, 8);
+	//AndroidSoldier e9(9, 8);
 	int type_id = 9;
-	Product e9 = Product(type_id);
+	AndroidSoldier e9 = AndroidSoldier(type_id);
 	e9.Print();
 	e9.SetCard(8);
 	e9.Print();
@@ -70,12 +70,12 @@ int main(int argc, char** argv)
 	cout << r << endl;
 	r = Compare(e2, e8);
 	cout << r << endl;
-	r = Compare(e8, Product(30));
+	r = Compare(e8, AndroidSoldier(30));
 	cout << r << endl;
 	// r = Compare(e8, 30);	// nie moze sie kompilowac !
-	Product e10 = static_cast<Product>(50);
+	AndroidSoldier e10 = static_cast<AndroidSoldier>(50);
 	e10.Print();
-	r = Compare(e8, static_cast<Product>(80));
+	r = Compare(e8, static_cast<AndroidSoldier>(80));
 	cout << r << endl;
 	
 	type_id = int(e8);
@@ -88,25 +88,25 @@ int main(int argc, char** argv)
 	cout << "e9_str: " << e9_str << endl;
 
 	
-	Product* t[3];
+	AndroidSoldier* t[3];
 	t[0] = &e4;
 	t[1] = &e5;
 	t[2] = &e6;
 	
-	vector<Product> v;
+	vector<AndroidSoldier> v;
 	v.push_back(e7);
 	v.push_back(e8);
 	v.push_back(e9);
 
 	
-	Warehouse S1;
+	Army S1;
 	S1.Print();
 	S1.Remove();
 	
-	Warehouse S2(e1);
+	Army S2(e1);
 	S2.Print();
 	
-	Warehouse S3(e2, e3);
+	Army S3(e2, e3);
 	S3.Print();
 	S3.Remove();
 	S3.Print();
@@ -116,30 +116,30 @@ int main(int argc, char** argv)
 	S3.Add(e2);
 	S3.Print();
 	
-	Warehouse S4(3, t);
+	Army S4(3, t);
 	S4.Print();
 	e5.SetCard(13);
 	e5.Print();
 	S4.Print();
 	
-	Warehouse S5(v);
+	Army S5(v);
 	S5.Print();
 	v.clear();
 	S5.Print();
 	
-	Warehouse S6(S4);
+	Army S6(S4);
 	S6.Print();
 	S6.Clear();
 	S6.Print();
 	S4.Print();
 	
-	Warehouse S7(S5);
+	Army S7(S5);
 	S7.Print();
 	S7.Clear();
 	S7.Print();
 	S5.Print();
 
-	Warehouse S8 = std::move(S5);
+	Army S8 = std::move(S5);
 	S8.Print();
 	S5.Print();
 
